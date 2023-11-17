@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500&family=Open+Sans:wght@300;500&family=Roboto:wght@300;400&display=swap');
+
+
 /*Some necessary adjustments*/
 h1, body, html, main {
   margin: 0;
@@ -7,28 +10,35 @@ html {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
 }
+/* Set width of all text content to 1000 px, pertains section elements and hr*/
 section {
-  width: 900px;
+  width: 1000px;
   display: flex;
   flex-direction: column;
+  margin: 40px 0;
+}
+h2 {
+  font-size: 1.6em;
+  font-weight: 400;
+  margin: 0;
 }
 hr {
   color: black;
   text-align: center;
   background-color: black;
-  width: 900px;
+  width: 1000px;
   height: 1px;
 }
 ul, ol {
-  font-size: 1.2em;
-  font-weight: 400;
-  line-height: 1.2em;
-  margin: 0;
+  font-size: 1.3em;
+  font-weight: 300;
+  line-height: 1.3em;
   counter-reset: list;
+  margin-left:-40px;
 }
 ul, ol > li {
   list-style-type: none;
-  position: relative;
+  counter-reset: list;
 }
 ul > li:before {
   content: "- ";
@@ -38,11 +48,12 @@ ol > li:before {
   counter-increment: list;
 }
 .container {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 30px;
+  margin: 20px;
 }
 .header {
   background-image: url("../images/soup.jpg");
@@ -65,18 +76,17 @@ ol > li:before {
   margin-top: 300px;
 }
 .description {
-  width: 900px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .description-text {
-  font-size: 1.2em;
+  font-size: 1.6em;
+  font-weight: 300;
+  text-align: left;
 }
 .info-graphics {
-  width: 300px;
+  width: 400px;
   align-self: center;
-}
-.ingredients {
-
+  margin: 30px 20px;
 }

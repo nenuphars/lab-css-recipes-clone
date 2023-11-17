@@ -20,45 +20,49 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 
 /*  Set the font */
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.2em;
   color: black;
 }
 
 /* STYLES */
+/* Set the with of the text and hr elements to 100 px */
 section {
-  width: 800px;
-  height:fit-content;
-  margin: 20px 0;
+  width: 1000px;
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
 }
 h2 {
-  font-size: 1.5em;
+  font-size: 1.7em;
+  font-weight: 500;
   padding: 20px 0;
-  font-weight: 400;
+
 }
 hr {
   height: 2px;
   color: black;
   background-color: black;
-  width: 800px;
+  width: 1000px;
 }
 ul, ol {
-  font-size: 1.2em;
+  font-size: 1.3em;
   font-weight: 400;
   line-height: 1.2em;
   margin: 20px;
-}
-ol {
   counter-reset: list;
 }
-ol > li {
+ol, ul > li {
   list-style: none;
 }
 ol > li:before {
   content: counter(list) ") ";
   counter-increment: list;
+}
+ul > li:before {
+  content: "- ";
 }
 .container {
   width: 100%;
@@ -72,10 +76,10 @@ ol > li:before {
   background-image: url("../images/apple-pie.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: -80px;
+  margin-top: -90px;
   overflow: hidden;
-  height:600px;
-  width:100vw;
+  height:900px;
+  width:auto;
   display: flex;
   justify-self: center;
   align-self: center;
@@ -85,35 +89,24 @@ ol > li:before {
 .heading {
   color: white;
   font-weight: 400;
-  font-size: 5em;
+  font-size: 5.8em;
+  margin-top: -40px;
 }
-.info-container {
-  margin: 30px;
+.description, .pictogram-container, .directions-list {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.pictogram-container {
-  width: 700px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 20px;
-}
-.info-text {
-  font-size: 1.2em;
+.description-text {
+  font-size: 1.4em;
   line-height: 1.2em;
   font-weight: 400;
   text-align: left;
 }
-.pictograms {
+.info-graphics {
   width: 360px;
   margin: 30px 20px;
 }
-.ingredients, .directions {
-  margin: 30px 0;
-}
-.ingredients-list {
-  list-style-type: none;
-}
+
+
