@@ -74,7 +74,7 @@ ol > li:before {
   font-size: 5em;
   margin-top: 300px;
 }
-.description, .info-graphics, .directions-list {
+.description, .ingredients, .directions {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -85,8 +85,12 @@ ol > li:before {
   font-weight: 300;
   text-align: left;
 }
+.ingredients-list {
+  width: inherit;
+  text-align: left;
+}
 .info-graphics {
   width: 400px;
   align-self: center;
-  margin: 30px;
+  justify-self: center;
 }
